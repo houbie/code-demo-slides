@@ -6,7 +6,7 @@ jupyter_contrib_nbextensions
 """
 
 [tool.pyprojectx.aliases]
-start = "jupyter notebook README.ipynb"
+start = "jupyter notebook slides.ipynb"
 generate-slides = "jupyter nbconvert --to slides *.ipynb && python -m process_html"
 clean = "rm -r .venv .pytest_cache dist"
 
