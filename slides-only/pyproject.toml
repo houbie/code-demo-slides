@@ -1,0 +1,14 @@
+[tool.pyprojectx]
+jupyter = """\
+jupyter
+RISE
+jupyter_contrib_nbextensions
+"""
+
+[tool.pyprojectx.aliases]
+start = "jupyter notebook README.ipynb"
+generate-slides = "jupyter nbconvert --to slides *.ipynb && python -m process_html"
+clean = "rm -r .venv .pytest_cache dist"
+
+[tool.pyprojectx.os.win.aliases]
+clean = "rmdir /s/q .venv .pytest_cache dist"
