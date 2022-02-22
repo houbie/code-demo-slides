@@ -6,7 +6,7 @@
 
 ```shell
 git checkout https://github.com/houbie/code-demo-slides.git
-cd code-demo-slides/slides-only
+cd code-demo-slides/demo-slides
 ./pw start # omit ./ on windows: pw start
 ```
 

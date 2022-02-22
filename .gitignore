@@ -133,3 +133,5 @@ dmypy.json
 .vs/
 dist-zip/
 *.html
+ijava/
+node_modules/

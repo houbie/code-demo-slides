@@ -1,12 +1,13 @@
-# Demo slides
+# Python project demo slides
 * embedded code snippets
-* executable Python, JavaScript and shell instructions
+* execute project modules
+  * import modules from project dependencies
 
 ## Getting started
 
 ```shell
 git checkout https://github.com/houbie/code-demo-slides.git
-cd code-demo-slides/slides-only
+cd code-demo-slides/python-project-slides
 ./pw start # omit ./ on windows: pw start
 ```
 

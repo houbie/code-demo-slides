@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "python-project-slides"
+version = "1.0.0"
+description = "Demo project code during a slide show"
+license = "MIT"
+authors = ["Houbie <ivo@houbrechts-it.be>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+matplotlib = "~3.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pyprojectx]
+poetry = "poetry==1.1.12"
+
+# make the current directory available in jupyter by installing '.'
+jupyter = """\
+jupyter
+RISE
+jupyter_contrib_nbextensions
+.
+"""
+
+[tool.pyprojectx.aliases]
+install = "poetry install"
+start = "jupyter notebook slides.ipynb -y" # -y will auto answer yes when stopping the server with ctrl+c
+clean = "rm -r .venv .pytest_cache dist *.slides.html"
+
+[tool.pyprojectx.os.win.aliases]
+clean = "rmdir /s/q .venv .pytest_cache dist"
