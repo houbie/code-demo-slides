@@ -7,7 +7,7 @@
 ## Getting started
 
 ```shell
-git checkout https://github.com/houbie/code-demo-slides.git
+git clone https://github.com/houbie/code-demo-slides.git
 cd code-demo-slides/demo-slides
 # windows: pw start (without ./)
 ./pw start
