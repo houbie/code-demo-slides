@@ -1,0 +1,62 @@
+[project]
+name = "python-project-slides"
+version = "1.0.0"
+description = "Demo project code during a slide show"
+authors = [
+    {name = "houbie", email = "ivo@houbrechts-it.be"},
+]
+license-expression = "MIT"
+dependencies = [
+    "matplotlib>=3.5.1",
+]
+requires-python = ">=3.7"
+
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.1.1",
+]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["pdm-pep517>=0.12.0"]
+build-backend = "pdm.pep517.api"
+
+[tool.pyprojectx]
+pdm = "pdm==1.13.6"
+
+[tool.pyprojectx.jupyter]
+requirements = [
+    "IPython ~=8.0",
+    "ipykernel ~=6.9",
+    "ipywidgets ~=7.6",
+    "jupyter_client ~=7.1",
+    "jupyter_core ~=4.9",
+    "nbclient ~=0.5",
+    "nbconvert ~=6.4",
+    "nbformat ~=5.1",
+    "notebook ~=6.4",
+    "qtconsole ~=5.2",
+    "traitlets ~=5.1",
+    "RISE ~=5.7",
+    "jupyter_contrib_nbextensions ~=0.5",
+    "."
+]
+post-install="""
+jupyter contrib nbextension install --sys-prefix
+jupyter nbextension enable autoscroll/main --sys-prefix
+jupyter nbextension enable scroll_down/main --sys-prefix"""
+
+[tool.pyprojectx.aliases]
+install = "pdm install"
+run = "pdm run"
+outdated = "pdm update --outdated"
+test = "pdm run pytest"
+
+start = "@jupyter: pw@install && jupyter notebook slides.ipynb -y" # -y will auto answer yes when stopping the server with ctrl+c
+generate-slides = "jupyter nbconvert --to slides *.ipynb && python -m process_html"
+clean = "rm -r .ipynb_checkpoints *.slides.html __pypackages__"
+
+[tool.pyprojectx.os.win.aliases]
+clean = "rmdir /s/q .ipynb_checkpoints *.slides.html __pypackages__"
