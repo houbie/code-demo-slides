@@ -1,15 +1,22 @@
-# Python project demo slides
-* embedded code snippets
-* execute project modules
-  * import modules from project dependencies
+# Node.js project demo slides
+* embedded TypeScript and JavaScript code snippets
+* use Node.js libraries
 
 ## Getting started
 
 ```shell
-git checkout https://github.com/houbie/code-demo-slides.git
-cd code-demo-slides/python-project-slides
-./pw start # omit ./ on windows: pw start
+cd code-demo-slides/nodejs
+# windows: pw start (without ./)
+./pw start
 ```
 
 <div class="alert alert-block alert-info">
-    <b>NOTE:</b> Make sure Python >=3.7 is available on your path by running <em>python --version</em></div>
+    <b>NOTE:</b> Make sure npm is available on your path by running <em>npm --version</em></div>
+
+## tslab Kernel
+These slides use the [tslab](https://github.com/yunabe/tslab) kernels.
+
+The _tslab_ npm package provides both a TypeScript and JavaScript kernel. 
+
+The [SoS kernel](https://github.com/vatlab/SOS) is optional and only needed if you want to execute both
+TypeScript and JavaScript in one notebook. Without _SoS_, you would need to switch the kernel in between executions. 

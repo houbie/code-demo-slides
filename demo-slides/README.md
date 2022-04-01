@@ -1,13 +1,14 @@
 # Demo slides
 * embedded code snippets
-* executable Python, JavaScript and shell instructions
+* execute Python, JavaScript and shell instructions from within the slide show
 
 ## Getting started
 
 ```shell
 git checkout https://github.com/houbie/code-demo-slides.git
 cd code-demo-slides/demo-slides
-./pw start # omit ./ on windows: pw start
+# windows: pw start (without ./)
+./pw start
 ```
 
 <div class="alert alert-block alert-info">

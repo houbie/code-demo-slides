@@ -33,9 +33,9 @@ jupyter nbextension enable scroll_down/main --sys-prefix"""
 [tool.pyprojectx.aliases]
 start = "jupyter notebook slides.ipynb -y" # -y will auto answer yes when stopping the server with ctrl+c
 generate-slides = "jupyter nbconvert --to slides *.ipynb && python -m process_html"
-clean = "rm -r .venv .pytest_cache dist *.slides.html"
+clean = "rm -r .ipynb_checkpoints *.slides.html"
 
 latest-start = "@jupyter-latest: jupyter notebook slides.ipynb -y" # -y will auto answer yes when stopping the server with ctrl+c
 
 [tool.pyprojectx.os.win.aliases]
-clean = "rmdir /s/q .venv .pytest_cache dist"
+clean = "rmdir /s/q .ipynb_checkpoints *.slides.html"
