@@ -14,7 +14,7 @@ cd code-demo-slides/demo-slides
 ```
 
 <div class="alert alert-block alert-info">
-    <b>NOTE:</b> Make sure Python >=3.7 is available on your path by running <em>python --version</em></div>
+    <b>NOTE:</b> Make sure Python >=3.8 is available on your path by running <em>python --version</em></div>
 
 ## Language Specific Examples
 ### Python

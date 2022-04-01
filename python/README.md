@@ -12,7 +12,7 @@ cd python
 ```
 
 <div class="alert alert-block alert-info">
-    <b>NOTE:</b> Make sure Python >=3.7 is available on your path by running <em>python --version</em></div>
+    <b>NOTE:</b> Make sure Python >=3.8 is available on your path by running <em>python --version</em></div>
 
 ## Python Project
 This example project uses [PDM](https://pdm.fming.dev/) for dependency management.

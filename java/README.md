@@ -11,7 +11,7 @@ cd code-demo-slides/java
 ```
 
 <div class="alert alert-block alert-info">
-    <b>NOTE:</b> Make sure Python >=3.7 is available on your path by running <em>python --version</em></div>
+    <b>NOTE:</b> Make sure Python >=3.8 is available on your path by running <em>python --version</em></div>
 <div class="alert alert-block alert-info">
     <b>NOTE:</b> Make sure Java >=9 is available on your path by running <em>java -version</em></div>
 

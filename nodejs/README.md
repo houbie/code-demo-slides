@@ -11,7 +11,9 @@ cd code-demo-slides/nodejs
 ```
 
 <div class="alert alert-block alert-info">
-    <b>NOTE:</b> Make sure npm is available on your path by running <em>npm --version</em></div>
+    <b>NOTE:</b> Make sure Python >=3.8 is available on your path by running <em>python --version</em></div>
+<div class="alert alert-block alert-info">
+    <b>NOTE:</b> Make sure nodejs/npm is available on your path by running <em>npm --version</em></div>
 
 ## tslab Kernel
 These slides use the [tslab](https://github.com/yunabe/tslab) kernels.
