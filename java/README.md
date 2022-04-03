@@ -6,7 +6,7 @@
 
 ```shell
 cd code-demo-slides/java
-# windows: pw start (without ./)
+# windows: .\pw start
 ./pw start
 ```
 

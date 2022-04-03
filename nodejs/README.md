@@ -6,7 +6,7 @@
 
 ```shell
 cd code-demo-slides/nodejs
-# windows: pw start (without ./)
+# windows: .\pw start
 ./pw start
 ```
 

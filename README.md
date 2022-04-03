@@ -9,7 +9,7 @@
 ```shell
 git clone https://github.com/houbie/code-demo-slides.git
 cd code-demo-slides/demo-slides
-# windows: pw start (without ./)
+# windows: .\pw start
 ./pw start
 ```
 
@@ -22,7 +22,7 @@ Using the default Python kernel.
 
 ```shell
 cd code-demo-slides/python
-# windows: pw start (without ./)
+# windows: .\pw start
 ./pw start
 ```
 
@@ -31,7 +31,7 @@ Using the [tslab](https://github.com/yunabe/tslab) kernel.
 
 ```shell
 cd code-demo-slides/nodejs
-# windows: pw start (without ./)
+# windows: .\pw start
 ./pw start
 ```
 
@@ -40,7 +40,7 @@ Using the [IJava](https://github.com/SpencerPark/IJava) kernel.
 
 ```shell
 cd code-demo-slides/java
-# windows: pw start (without ./)
+# windows: .\pw start
 ./pw start
 ```
 

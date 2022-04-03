@@ -7,7 +7,7 @@
 
 ```shell
 cd python
-# windows: pw start (without ./)
+# windows: .\pw start
 ./pw start
 ```
 
